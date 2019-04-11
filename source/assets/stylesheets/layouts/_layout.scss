@@ -1,0 +1,62 @@
+@font-face {
+  font-family: 'MyDearWatson';
+  src: font-url('MyDearWatson-Regular.eot'); /* IE9 Compat Modes */
+  src: font-url('MyDearWatson.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       font-url('MyDearWatson-Regular.woff2') format('woff2'), /* Super Modern Browsers */
+       font-url('MyDearWatson-Regular.woff') format('woff') /* Pretty Modern Browsers */
+}
+
+html,
+body {
+  font-family: 'Muli', sans-serif;
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  background-color: #777777;
+  padding: 10px;
+}
+
+.page {
+  background-color: white;
+
+  .image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+  }
+
+  .image-container img {
+    max-width: 100%;
+    max-height: 100%;
+  }
+
+  &.odd {
+    border-left: 4px solid #f0f0f0;
+  }
+}
+
+
+
+.page-button {
+  background-color: rgb(240, 24, 67);
+  color: white;
+  font-size: 12px;
+  font-family: 'MyDearWatson', sans-serif;
+  font-weight: 500;
+  padding: 15px;
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  cursor: pointer;
+  z-index: 1001;
+  border-radius: 4px;
+}
+
+.page-button#next-page {
+  right: 10px;
+  left: auto;
+}

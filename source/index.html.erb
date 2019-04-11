@@ -2,4 +2,17 @@
 title: Hello, world!
 ---
 
-Yo! What's up, world?
+
+<div id="book">
+  <% (1..58).each do |page_number| %>
+    <div id="page-<%= page_number%>">
+      <div class="image-container">
+        <%= image_tag("pages/book-#{page_number}.jpeg") %>
+      </div>
+    </div>
+  <% end %>
+</div>
+
+<div class="page-button" id="next-page">Next Page</div>
+<div class="page-button" id="prev-page">Previous Page</div>
+

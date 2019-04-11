@@ -2,6 +2,7 @@
 //
 // Should include variables, configs, and settings
 @import 'settings/settings.global';
+@import 'settings/settings.media-queries';
 
 // Genric
 //
@@ -24,7 +25,7 @@
 //
 // Page/layout specific styles, e.g. if a page has
 // a unique look that overrides generic styles
-// @import 'layouts/layouts.about';
+@import 'layouts/layout';
 
 // Utilities
 //
