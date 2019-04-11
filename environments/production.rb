@@ -1,5 +1,5 @@
 configure :production do
-  config[:host] = "https://www.domain.com"
+  config[:host] = "https://www.kohbo.com"
 
   # Minify errythang
   activate :minify_css, inline: true
@@ -15,22 +15,22 @@ configure :production do
   # GZIP errythang
   activate :gzip
 
-  # Robots.txt
-  activate :robots,
-  rules: [
-    {
-      user_agent: '*',
-      allow:      %w(/),
-    }
-  ],
-  sitemap: "#{config[:host]}/sitemap.xml"
+  # # Robots.txt
+  # activate :robots,
+  # rules: [
+  #   {
+  #     user_agent: '*',
+  #     allow:      %w(/),
+  #   }
+  # ],
+  # sitemap: "#{config[:host]}/sitemap.xml"
 
-  # Ping the search engines upon build
-  activate :sitemap_ping do |config|
-    config.host         = host
-    config.sitemap_file = 'sitemap.xml'
-    config.ping_google  = true
-    config.ping_bing    = true
-    config.after_build  = true
-  end
+  # # Ping the search engines upon build
+  # activate :sitemap_ping do |config|
+  #   config.host         = host
+  #   config.sitemap_file = 'sitemap.xml'
+  #   config.ping_google  = true
+  #   config.ping_bing    = true
+  #   config.after_build  = true
+  # end
 end

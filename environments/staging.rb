@@ -1,5 +1,5 @@
 configure :staging do
-  config[:host] = "https://staging.domain.com"
+  config[:host] = "https://www.kohbo.com"
 
   # Minify errythang
   activate :minify_css, inline: true
